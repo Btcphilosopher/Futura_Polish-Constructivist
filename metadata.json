@@ -1,0 +1,6 @@
+{
+  "name": "Futura - Polish Constructivist Furniture",
+  "description": "An interactive, high-fidelity responsive catalog for FUTURA, a premium furniture atelier showcasing avant-garde Polish constructivist designs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

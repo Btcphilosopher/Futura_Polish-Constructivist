@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", sans-serif;
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-futura-cream: #f4ebd9;
+  --color-futura-red: #a71c1c;
+  --color-futura-black: #111111;
+  
+  --animate-diagonal-slide: diagonal-slide 0.6s ease-out;
+}
+
+@keyframes diagonal-slide {
+  from {
+    transform: translate(-20px, 20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+/* Custom layout utility rules for constructivist style */
+.skew-parallelogram {
+  transform: skewX(-20deg);
+}
+
+.skew-parallelogram-reverse {
+  transform: skewX(20deg);
+}
+
+.constructivist-grid {
+  background-image: radial-gradient(#a71c1c 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Scrollbar styles to match the warm parchment and black design */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4ebd9;
+}
+::-webkit-scrollbar-thumb {
+  background: #a71c1c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #111111;
+}
